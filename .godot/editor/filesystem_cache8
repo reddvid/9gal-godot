@@ -1,0 +1,19 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1720140645
+icon.svg::CompressedTexture2D::7487077484124375164::1720026913::1720026919::1::::<><>::
+::res://assets/::1720142499
+asphalt.png::CompressedTexture2D::6059768909399024393::1720122072::1720122051::1::::<><>::
+fall.png::CompressedTexture2D::1913425030116498573::1720142466::1720142503::1::::<><>::
+idle.png::CompressedTexture2D::16118212369408101::1720117744::1720120448::1::::<><>::
+jump.png::CompressedTexture2D::3495327544345244210::1720141730::1720141730::1::::<><>::
+run.png::CompressedTexture2D::9156363881436803539::1720140120::1720140291::1::::<><>::
+::res://Platformer Tileset #1/::1720117747
+Background Platformer.png::CompressedTexture2D::6504098776903907915::1720117728::1720117728::1::::<><>::
+TileSet.png::CompressedTexture2D::6795165762080415586::1720117728::1720117728::1::::<><>::
+::res://scenes/::1720141762
+game.tscn::PackedScene::191525840560583360::1720141226::0::1::::<><>::uid://cslnrj62ebetl::::res://assets/asphalt.png<>uid://o3mh4v7invu::::res://scenes/player.tscn<>uid://4b5mmuu6q2jw::::res://scenes/keelzone.tscn
+player.tscn::PackedScene::30623207341172530::1720141762::0::1::::<><>::res://scripts/Player.cs<>uid://h2p2c0qj8dt::::res://assets/idle.png<>uid://d3pn8fr1m2xvv::::res://assets/run.png<>uid://bp2fsfju4l73s::::res://assets/jump.png
+keelzone.tscn::PackedScene::2039384444693936932::1720141252::0::1::::<><>::res://scripts/Keelzone.cs
+::res://scripts/::1720141800
+Player.cs::CSharpScript::-1::1720141800::0::1::::<>CharacterBody2D<>::
+Keelzone.cs::CSharpScript::-1::1720139420::0::1::::<>Area2D<>::

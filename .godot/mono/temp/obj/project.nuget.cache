@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "rqNnBeWzQ4M=",
+  "success": true,
+  "projectFilePath": "J:\\Godot Projects\\9Gal\\G9.csproj",
+  "expectedPackageFiles": [
+    "J:\\packages\\NuGet\\cache\\godot.sourcegenerators\\4.2.2\\godot.sourcegenerators.4.2.2.nupkg.sha512",
+    "J:\\packages\\NuGet\\cache\\godotsharp\\4.2.2\\godotsharp.4.2.2.nupkg.sha512",
+    "J:\\packages\\NuGet\\cache\\godotsharpeditor\\4.2.2\\godotsharpeditor.4.2.2.nupkg.sha512"
+  ],
+  "logs": []
+}
