@@ -11,13 +11,27 @@ config_version=5
 [application]
 
 config/name="G9"
+config/version="0.1.1"
 run/main_scene="res://scenes/level1.tscn"
+config/use_custom_user_dir=true
+config/custom_user_dir_name="9Gal"
 config/features=PackedStringArray("4.2", "C#", "Mobile")
-config/icon="res://icon.svg"
+config/icon="res://9gal.png"
+config/windows_native_icon="res://9gal.ico"
+
+[autoload]
+
+Music="*res://scenes/music.tscn"
 
 [dotnet]
 
 project/assembly_name="G9"
+
+[importer_defaults]
+
+animation_library={
+"animation/fps": 60.0
+}
 
 [input]
 

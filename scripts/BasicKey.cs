@@ -3,18 +3,20 @@ using System;
 
 public partial class BasicKey : Area2D
 {
+    private AnimationPlayer _animationPlayer;
+    
     public override void _Ready()
     {
-        
+        _animationPlayer = GetNode<AnimationPlayer>("AnimationPlayer");
     }
 
     private void BodyEntered(Node2D body)
     {
-        QueueFree();
-        
         GD.Print("You Got a Basic Key");
+        
+        _animationPlayer.Play("pickup");
 
-        body.GetNode<Label>("Label").Text = "You got a basic key!";
-        body.GetNode<Label>("Label").Show();
+        GetTree().CurrentScene.GetNode<Label>("CanvasLayer/Label");
+        
     }
 }

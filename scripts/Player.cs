@@ -49,6 +49,8 @@ public partial class Player : CharacterBody2D
         // Play animations
         if (IsOnFloor())
         {
+            if (_playerAnimSprite.Animation == "unalive_no_weapon") return;
+            
             _playerAnimSprite.Play(direction == Vector2.Zero ? "idle" : "run");
             _playerAnimSprite.Position = _playerAnimSprite.FlipH switch
             {
@@ -70,7 +72,6 @@ public partial class Player : CharacterBody2D
         else
         {
             _playerAnimSprite.Play(velocity.Y < 0 ? "jump" : "fall");
-
 
             if (!_playerAnimSprite.FlipH)
             {

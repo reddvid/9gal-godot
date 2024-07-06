@@ -1,10 +1,11 @@
-[gd_scene load_steps=28 format=3 uid="uid://o3mh4v7invu"]
+[gd_scene load_steps=37 format=3 uid="uid://o3mh4v7invu"]
 
 [ext_resource type="Script" path="res://scripts/Player.cs" id="1_2kys4"]
 [ext_resource type="Texture2D" uid="uid://2i43ijqpnpm8" path="res://assets/fall.png" id="2_kjp7j"]
 [ext_resource type="Texture2D" uid="uid://h2p2c0qj8dt" path="res://assets/idle.png" id="2_vhpns"]
 [ext_resource type="Texture2D" uid="uid://d3pn8fr1m2xvv" path="res://assets/run.png" id="3_icwxd"]
 [ext_resource type="Texture2D" uid="uid://bp2fsfju4l73s" path="res://assets/jump.png" id="3_mck1r"]
+[ext_resource type="Texture2D" uid="uid://ciu2c4nmyrck8" path="res://assets/sprites/player/start/unalive_weaponless.png" id="6_80k6y"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_exhr5"]
 atlas = ExtResource("2_kjp7j")
@@ -84,6 +85,38 @@ region = Rect2(384, 0, 64, 44)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xx6bd"]
 atlas = ExtResource("3_icwxd")
+region = Rect2(448, 0, 64, 44)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wmu8m"]
+atlas = ExtResource("6_80k6y")
+region = Rect2(0, 0, 64, 44)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q2b7v"]
+atlas = ExtResource("6_80k6y")
+region = Rect2(64, 0, 64, 44)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jv5j0"]
+atlas = ExtResource("6_80k6y")
+region = Rect2(128, 0, 64, 44)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k7jvs"]
+atlas = ExtResource("6_80k6y")
+region = Rect2(192, 0, 64, 44)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_prqag"]
+atlas = ExtResource("6_80k6y")
+region = Rect2(256, 0, 64, 44)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xb8ly"]
+atlas = ExtResource("6_80k6y")
+region = Rect2(320, 0, 64, 44)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5ocx0"]
+atlas = ExtResource("6_80k6y")
+region = Rect2(384, 0, 64, 44)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oy6lg"]
+atlas = ExtResource("6_80k6y")
 region = Rect2(448, 0, 64, 44)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ofclw"]
@@ -167,6 +200,35 @@ animations = [{
 "loop": true,
 "name": &"run",
 "speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wmu8m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q2b7v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jv5j0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k7jvs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_prqag")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xb8ly")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5ocx0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oy6lg")
+}],
+"loop": true,
+"name": &"unalive_no_weapon",
+"speed": 10.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bdgkt"]
@@ -179,8 +241,9 @@ script = ExtResource("1_2kys4")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-2, 2)
 sprite_frames = SubResource("SpriteFrames_ofclw")
-animation = &"fall"
+animation = &"unalive_no_weapon"
 autoplay = "fall"
+frame_progress = 0.488001
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-7, 8)

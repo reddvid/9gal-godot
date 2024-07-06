@@ -32,3 +32,4 @@ J:\Godot Projects\9Gal\.godot\mono\temp\obj\Debug\refint\G9.dll
 J:\Godot Projects\9Gal\.godot\mono\temp\obj\Debug\G9.pdb
 J:\Godot Projects\9Gal\.godot\mono\temp\obj\Debug\G9.genruntimeconfig.cache
 J:\Godot Projects\9Gal\.godot\mono\temp\obj\Debug\ref\G9.dll
+J:\Godot Projects\9Gal\.godot\mono\temp\obj\Debug\G9.sourcelink.json
