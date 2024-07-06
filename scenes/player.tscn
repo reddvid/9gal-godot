@@ -170,17 +170,18 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bdgkt"]
-size = Vector2(9, 32)
+size = Vector2(8, 30)
 
 [node name="Player" type="CharacterBody2D"]
 collision_layer = 2
 script = ExtResource("1_2kys4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-2, 2)
 sprite_frames = SubResource("SpriteFrames_ofclw")
 animation = &"fall"
-autoplay = "idle"
+autoplay = "fall"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-4.5, 5)
+position = Vector2(-7, 8)
 shape = SubResource("RectangleShape2D_bdgkt")

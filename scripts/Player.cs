@@ -10,10 +10,12 @@ public partial class Player : CharacterBody2D
     public float gravity = ProjectSettings.GetSetting("physics/2d/default_gravity").AsSingle();
 
     private AnimatedSprite2D _playerAnimSprite;
+    private CollisionShape2D _playerCollision;
 
     public override void _Ready()
     {
         _playerAnimSprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
+        _playerCollision = GetNode<CollisionShape2D>("CollisionShape2D");
     }
 
     public override void _PhysicsProcess(double delta)
@@ -35,10 +37,12 @@ public partial class Player : CharacterBody2D
         // Direct the player
         if (direction > Vector2.Zero)
         {
+            // Going to the right
             _playerAnimSprite.FlipH = false;
         }
         else if (direction < Vector2.Zero)
         {
+            // Going to the left
             _playerAnimSprite.FlipH = true;
         }
 
@@ -46,10 +50,36 @@ public partial class Player : CharacterBody2D
         if (IsOnFloor())
         {
             _playerAnimSprite.Play(direction == Vector2.Zero ? "idle" : "run");
+            _playerAnimSprite.Position = _playerAnimSprite.FlipH switch
+            {
+                true when direction == Vector2.Zero =>
+                    // Looking to the Left Idle
+                    new Vector2(-10, 2),
+                true when direction != Vector2.Zero =>
+                    // Looking to the Left Running
+                    new Vector2(-18, 2),
+                false when direction == Vector2.Zero =>
+                    // Looking to the Right Idle
+                    new Vector2(-2, 2),
+                false when direction != Vector2.Zero =>
+                    // Looking to the Right Running
+                    new Vector2(6, 2),
+                _ => _playerAnimSprite.Position
+            };
         }
         else
         {
             _playerAnimSprite.Play(velocity.Y < 0 ? "jump" : "fall");
+
+
+            if (!_playerAnimSprite.FlipH)
+            {
+                _playerAnimSprite.Position = new Vector2(-4, 2);
+            }
+            else
+            {
+                _playerAnimSprite.Position = new Vector2(-10, 2);
+            }
         }
 
         // Apply movement

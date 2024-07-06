@@ -1,0 +1,54 @@
+[gd_scene load_steps=8 format=3 uid="uid://collgtfy7gpf1"]
+
+[ext_resource type="Script" path="res://scripts/BasicKey.cs" id="1_h5pv3"]
+[ext_resource type="Texture2D" uid="uid://cvxf6y54o6uea" path="res://assets/basic_key.png" id="1_t3mig"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1m1wg"]
+atlas = ExtResource("1_t3mig")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_smu5q"]
+atlas = ExtResource("1_t3mig")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_on84o"]
+atlas = ExtResource("1_t3mig")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_oo5ua"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1m1wg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_smu5q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1m1wg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_on84o")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yxar7"]
+size = Vector2(14, 8)
+
+[node name="BasicKey" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_h5pv3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_oo5ua")
+autoplay = "default"
+frame_progress = 0.729012
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_yxar7")
+
+[connection signal="body_entered" from="." to="." method="BodyEntered"]

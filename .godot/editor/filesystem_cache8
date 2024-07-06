@@ -1,19 +1,34 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1720140645
+::res://::1720235168
 icon.svg::CompressedTexture2D::7487077484124375164::1720026913::1720026919::1::::<><>::
-::res://assets/::1720142499
+::res://assets/::1720235306
 asphalt.png::CompressedTexture2D::6059768909399024393::1720122072::1720122051::1::::<><>::
-fall.png::CompressedTexture2D::1913425030116498573::1720142466::1720142503::1::::<><>::
-idle.png::CompressedTexture2D::16118212369408101::1720117744::1720120448::1::::<><>::
-jump.png::CompressedTexture2D::3495327544345244210::1720141730::1720141730::1::::<><>::
-run.png::CompressedTexture2D::9156363881436803539::1720140120::1720140291::1::::<><>::
+basic_key.png::CompressedTexture2D::6294648024945254736::1720233993::1720233994::1::::<><>::
+bat.png::CompressedTexture2D::6589577920323456780::1720235306::1720235307::1::::<><>::
+bg_night.png::CompressedTexture2D::274640567821530470::1720219136::1720219136::1::::<><>::
+country village tileset.png::CompressedTexture2D::4583101566617215924::1720199347::1720199348::1::::<><>::
+fall.png::CompressedTexture2D::1913425030116498573::1720197581::1720197582::1::::<><>::
+idle.png::CompressedTexture2D::16118212369408101::1720197959::1720197960::1::::<><>::
+jump.png::CompressedTexture2D::3495327544345244210::1720197397::1720197398::1::::<><>::
+portal.png::CompressedTexture2D::3232296416645860834::1720223699::1720223699::1::::<><>::
+run.png::CompressedTexture2D::9156363881436803539::1720197397::1720197398::1::::<><>::
+vending.png::CompressedTexture2D::7616016819169405006::1720220839::1720220839::1::::<><>::
 ::res://Platformer Tileset #1/::1720117747
 Background Platformer.png::CompressedTexture2D::6504098776903907915::1720117728::1720117728::1::::<><>::
 TileSet.png::CompressedTexture2D::6795165762080415586::1720117728::1720117728::1::::<><>::
-::res://scenes/::1720141762
-game.tscn::PackedScene::191525840560583360::1720141226::0::1::::<><>::uid://cslnrj62ebetl::::res://assets/asphalt.png<>uid://o3mh4v7invu::::res://scenes/player.tscn<>uid://4b5mmuu6q2jw::::res://scenes/keelzone.tscn
-player.tscn::PackedScene::30623207341172530::1720141762::0::1::::<><>::res://scripts/Player.cs<>uid://h2p2c0qj8dt::::res://assets/idle.png<>uid://d3pn8fr1m2xvv::::res://assets/run.png<>uid://bp2fsfju4l73s::::res://assets/jump.png
-keelzone.tscn::PackedScene::2039384444693936932::1720141252::0::1::::<><>::res://scripts/Keelzone.cs
-::res://scripts/::1720141800
-Player.cs::CSharpScript::-1::1720141800::0::1::::<>CharacterBody2D<>::
+::res://scenes/::1720235168
+basic_key.tscn::PackedScene::5778872942098314608::1720234397::0::1::::<><>::res://scripts/BasicKey.cs<>uid://cvxf6y54o6uea::::res://assets/basic_key.png
+keelzone.tscn::PackedScene::2039384444693936932::1720234396::0::1::::<><>::res://scripts/Keelzone.cs
+level1.tscn::PackedScene::191525840560583360::1720234396::0::1::::<><>::res://scripts/LevelOne.cs<>uid://cslnrj62ebetl::::res://assets/asphalt.png<>uid://b6kdapi6g0x3y::::res://assets/country village tileset.png<>uid://dgrixjbvx3jwo::::res://assets/vending.png<>uid://d6bj4jg5ot3s::::res://assets/bg_night.png<>uid://o3mh4v7invu::::res://scenes/player.tscn<>uid://4b5mmuu6q2jw::::res://scenes/keelzone.tscn<>uid://dqepawacbe1pw::::res://scenes/portal.tscn<>uid://cw34cy6ryfdmn::::res://scenes/single_platform.tscn
+level2.tscn::PackedScene::286733146474754688::1720234397::0::1::::<><>::uid://cslnrj62ebetl::::res://assets/asphalt.png<>uid://b6kdapi6g0x3y::::res://assets/country village tileset.png<>uid://dgrixjbvx3jwo::::res://assets/vending.png<>uid://d6bj4jg5ot3s::::res://assets/bg_night.png<>uid://o3mh4v7invu::::res://scenes/player.tscn<>uid://4b5mmuu6q2jw::::res://scenes/keelzone.tscn<>uid://dqepawacbe1pw::::res://scenes/portal.tscn<>uid://collgtfy7gpf1::::res://scenes/basic_key.tscn<>uid://cw34cy6ryfdmn::::res://scenes/single_platform.tscn
+player.tscn::PackedScene::30623207341172530::1720234396::0::1::::<><>::res://scripts/Player.cs<>uid://2i43ijqpnpm8::::res://assets/fall.png<>uid://h2p2c0qj8dt::::res://assets/idle.png<>uid://d3pn8fr1m2xvv::::res://assets/run.png<>uid://bp2fsfju4l73s::::res://assets/jump.png
+portal.tscn::PackedScene::8291452970801655532::1720234396::0::1::::<><>::uid://bmb0pj5qy65so::::res://assets/portal.png<>res://scripts/Portal.cs
+single_platform.tscn::PackedScene::6376564178168640569::1720233222::0::1::::<><>::uid://b6kdapi6g0x3y::::res://assets/country village tileset.png
+single_platform_left.tscn::PackedScene::7295287189524706969::1720233222::0::1::::<><>::uid://b6kdapi6g0x3y::::res://assets/country village tileset.png
+::res://scripts/::1720234373
+BasicKey.cs::CSharpScript::-1::1720234373::0::1::::<>Area2D<>::
 Keelzone.cs::CSharpScript::-1::1720139420::0::1::::<>Area2D<>::
+LevelOne.cs::CSharpScript::-1::1720231411::0::1::::<>Node2D<>::
+LevelTwo.cs::CSharpScript::-1::1720231547::0::1::::<>Node2D<>::
+Player.cs::CSharpScript::-1::1720231942::0::1::::<>CharacterBody2D<>::
+Portal.cs::CSharpScript::-1::1720232629::0::1::::<>Area2D<>::

@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cw34cy6ryfdmn"]
+
+[ext_resource type="Texture2D" uid="uid://b6kdapi6g0x3y" path="res://assets/country village tileset.png" id="1_xg63a"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5xsv5"]
+size = Vector2(16, 16)
+
+[node name="SinglePlatform" type="AnimatableBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_xg63a")
+region_enabled = true
+region_rect = Rect2(336, 80, 16, 16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_5xsv5")
+one_way_collision = true
