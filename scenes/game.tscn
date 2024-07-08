@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://dwmmtkg2k4gm5"]
+
+[ext_resource type="Script" path="res://scripts/Game.cs" id="1_0stlg"]
+[ext_resource type="PackedScene" uid="uid://cy1nxoit5u7q" path="res://scenes/world/c1m1.tscn" id="1_n6uu1"]
+[ext_resource type="PackedScene" uid="uid://o3mh4v7invu" path="res://scenes/player.tscn" id="2_dbq8a"]
+[ext_resource type="PackedScene" uid="uid://bv7nxbvlw6al6" path="res://scenes/ui.tscn" id="3_fcwmi"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_0stlg")
+
+[node name="World" type="Node2D" parent="."]
+
+[node name="c1m1" parent="World" instance=ExtResource("1_n6uu1")]
+
+[node name="UI" parent="." instance=ExtResource("3_fcwmi")]
+layer = 4
+
+[node name="Player" parent="." instance=ExtResource("2_dbq8a")]
+z_index = 5
+position = Vector2(-17, -13)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(0, -28)
+offset = Vector2(0, -12)
+zoom = Vector2(3, 3)
+limit_top = -160
+limit_bottom = 80
+limit_smoothed = true
+
+[connection signal="ready" from="." to="." method="_Ready"]

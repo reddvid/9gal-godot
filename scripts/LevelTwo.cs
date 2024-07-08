@@ -4,6 +4,8 @@ using Range = Godot.Range;
 
 public partial class LevelTwo : Node2D
 {
+	[Export] private Player _player;
+	[Export] private UI _ui;
 	
 	private AnimationPlayer _plat1;
 	private AnimationPlayer _plat2;
@@ -19,6 +21,19 @@ public partial class LevelTwo : Node2D
 		
 		_plat2.Seek(rng.RandiRange(0, 4), true);
 		_plat1.Seek(rng.RandiRange(0, 8), true);
+		
+		_player.Collected += Collect;
+		_player.PortalEntered += ChangeLevel;
+	}
+	
+	private void ChangeLevel(string nextmap)
+	{
+		
+	}
+
+	private void Collect(string collectablename)
+	{
+		_ui.OnCollected(collectablename);
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.

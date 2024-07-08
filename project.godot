@@ -12,7 +12,7 @@ config_version=5
 
 config/name="G9"
 config/version="0.1.1"
-run/main_scene="res://scenes/level1.tscn"
+run/main_scene="res://scenes/world/c1m1.tscn"
 config/use_custom_user_dir=true
 config/custom_user_dir_name="9Gal"
 config/features=PackedStringArray("4.2", "C#", "Mobile")
@@ -22,6 +22,7 @@ config/windows_native_icon="res://9gal.ico"
 [autoload]
 
 Music="*res://scenes/music.tscn"
+MainParallaxBackground="*res://scenes/main_parallax_background.tscn"
 
 [dotnet]
 

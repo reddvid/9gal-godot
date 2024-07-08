@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1720291339
+::res://::1720382767
 9gal.png::CompressedTexture2D::9197504048001801759::1720245135::1720245161::1::::<><>::
 default_bus_layout.tres::AudioBusLayout::962535367433252418::1720244833::0::1::::<><>::
 export_presets.cfg::TextFile::-1::1720246178::0::1::::<><>::
@@ -21,34 +21,33 @@ cnc.mp3::AudioStreamMP3::4070588343118700853::1720244624::1720244630::1::::<><>:
 pick.mp3::AudioStreamMP3::6431851887956415677::1720242177::1720244630::1::::<><>::
 ::res://assets/sprites/::1720301514
 ::res://assets/sprites/player/::1720301526
-::res://assets/sprites/player/start/::1720301537
+::res://assets/sprites/player/start/::1720301538
 unalive_weaponless.png::CompressedTexture2D::5377284145801740613::1720301537::1720301538::1::::<><>::
 ::res://assets/sprites/slime/::1720291529
 slime_idle.png::CompressedTexture2D::2365863555212557722::1720291529::1720291529::1::::<><>::
-::res://data_G9_windows_x86_64/::1720246178
-G9.deps.json::JSON::-1::1720246174::0::1::::<><>::
-G9.runtimeconfig.json::JSON::-1::1720246174::0::1::::<><>::
-::res://Platformer Tileset #1/::1720117747
-Background Platformer.png::CompressedTexture2D::6504098776903907915::1720117728::1720117728::1::::<><>::
-TileSet.png::CompressedTexture2D::6795165762080415586::1720117728::1720117728::1::::<><>::
-::res://scenes/::1720298030
-basic_key.tscn::PackedScene::5778872942098314608::1720298030::0::1::::<><>::res://scripts/BasicKey.cs<>uid://cvxf6y54o6uea::::res://assets/basic_key.png<>uid://cxvvwp8ugrpcv::::res://assets/audio/pick.mp3
+::res://scenes/::1720382767
+basic_key.tscn::PackedScene::5778872942098314608::1720382715::0::1::::<><>::res://scripts/BasicKey.cs<>uid://cvxf6y54o6uea::::res://assets/basic_key.png<>uid://cxvvwp8ugrpcv::::res://assets/audio/pick.mp3
 caged_bat.tscn::PackedScene::6985099602566222753::1720297569::0::1::::<><>::uid://c05bnd0s7jf21::::res://assets/bat.png
-keelzone.tscn::PackedScene::2039384444693936932::1720298029::0::1::::<><>::res://scripts/Keelzone.cs
-level1.tscn::PackedScene::191525840560583360::1720298029::0::1::::<><>::res://scripts/LevelOne.cs<>uid://cslnrj62ebetl::::res://assets/asphalt.png<>uid://b6kdapi6g0x3y::::res://assets/country village tileset.png<>uid://dgrixjbvx3jwo::::res://assets/vending.png<>uid://d6bj4jg5ot3s::::res://assets/bg_night.png<>uid://o3mh4v7invu::::res://scenes/player.tscn<>uid://4b5mmuu6q2jw::::res://scenes/keelzone.tscn<>uid://dqepawacbe1pw::::res://scenes/portal.tscn<>uid://cw34cy6ryfdmn::::res://scenes/single_platform.tscn
-level2.tscn::PackedScene::286733146474754688::1720298030::0::1::::<><>::uid://cslnrj62ebetl::::res://assets/asphalt.png<>uid://b6kdapi6g0x3y::::res://assets/country village tileset.png<>uid://dgrixjbvx3jwo::::res://assets/vending.png<>uid://d6bj4jg5ot3s::::res://assets/bg_night.png<>uid://o3mh4v7invu::::res://scenes/player.tscn<>uid://4b5mmuu6q2jw::::res://scenes/keelzone.tscn<>uid://dqepawacbe1pw::::res://scenes/portal.tscn<>uid://collgtfy7gpf1::::res://scenes/basic_key.tscn<>uid://cw34cy6ryfdmn::::res://scenes/single_platform.tscn<>uid://c6rvtm3csbtg8::::res://scenes/caged_bat.tscn<>uid://d3v00undb3wew::::res://scenes/slime.tscn
+game.tscn::PackedScene::8728952213905718454::1720382767::0::1::::<><>::res://scripts/Game.cs<>uid://cy1nxoit5u7q::::res://scenes/world/c1m1.tscn<>uid://o3mh4v7invu::::res://scenes/player.tscn<>uid://bv7nxbvlw6al6::::res://scenes/ui.tscn
+keelzone.tscn::PackedScene::2039384444693936932::1720382715::0::1::::<><>::res://scripts/Keelzone.cs
 main_menu.tscn::PackedScene::615262181802813484::1720297569::0::1::::<><>::
 music.tscn::PackedScene::6250842550119247455::1720297569::0::1::::<><>::uid://bx8283s546g18::::res://assets/audio/cnc.mp3
-player.tscn::PackedScene::30623207341172530::1720298029::0::1::::<><>::res://scripts/Player.cs<>uid://2i43ijqpnpm8::::res://assets/fall.png<>uid://h2p2c0qj8dt::::res://assets/idle.png<>uid://d3pn8fr1m2xvv::::res://assets/run.png<>uid://bp2fsfju4l73s::::res://assets/jump.png
-portal.tscn::PackedScene::8291452970801655532::1720298029::0::1::::<><>::uid://bmb0pj5qy65so::::res://assets/portal.png<>res://scripts/Portal.cs
+player.tscn::PackedScene::30623207341172530::1720382715::0::1::::<><>::res://scripts/Player.cs<>uid://2i43ijqpnpm8::::res://assets/fall.png<>uid://h2p2c0qj8dt::::res://assets/idle.png<>uid://d3pn8fr1m2xvv::::res://assets/run.png<>uid://bp2fsfju4l73s::::res://assets/jump.png<>uid://ciu2c4nmyrck8::::res://assets/sprites/player/start/unalive_weaponless.png
+portal.tscn::PackedScene::8291452970801655532::1720382715::0::1::::<><>::uid://bmb0pj5qy65so::::res://assets/portal.png<>res://scripts/Portal.cs
 single_platform.tscn::PackedScene::6376564178168640569::1720233222::0::1::::<><>::uid://b6kdapi6g0x3y::::res://assets/country village tileset.png
 single_platform_left.tscn::PackedScene::7295287189524706969::1720233222::0::1::::<><>::uid://b6kdapi6g0x3y::::res://assets/country village tileset.png
-slime.tscn::PackedScene::9169465246134478214::1720298030::0::1::::<><>::uid://8yboryvtvbew::::res://assets/sprites/slime/slime_idle.png<>res://scripts/Slime.cs<>uid://4b5mmuu6q2jw::::res://scenes/keelzone.tscn
-::res://scripts/::1720298028
-BasicKey.cs::CSharpScript::-1::1720243161::0::1::::<>Area2D<>::
-Keelzone.cs::CSharpScript::-1::1720139420::0::1::::<>Area2D<>::
-LevelOne.cs::CSharpScript::-1::1720231411::0::1::::<>Node2D<>::
+slime.tscn::PackedScene::9169465246134478214::1720382715::0::1::::<><>::uid://8yboryvtvbew::::res://assets/sprites/slime/slime_idle.png<>res://scripts/Slime.cs<>uid://4b5mmuu6q2jw::::res://scenes/keelzone.tscn
+ui.tscn::PackedScene::3927276967882121357::1720382715::0::1::::<><>::res://scripts/UI.cs
+::res://scenes/world/::1720382767
+c1a2.tscn::PackedScene::286733146474754688::1720382715::0::1::::<><>::uid://cslnrj62ebetl::::res://assets/asphalt.png<>uid://b6kdapi6g0x3y::::res://assets/country village tileset.png<>uid://dgrixjbvx3jwo::::res://assets/vending.png<>uid://d6bj4jg5ot3s::::res://assets/bg_night.png<>uid://o3mh4v7invu::::res://scenes/player.tscn<>uid://4b5mmuu6q2jw::::res://scenes/keelzone.tscn<>uid://dqepawacbe1pw::::res://scenes/portal.tscn<>uid://cw34cy6ryfdmn::::res://scenes/single_platform.tscn<>uid://collgtfy7gpf1::::res://scenes/basic_key.tscn<>uid://c6rvtm3csbtg8::::res://scenes/caged_bat.tscn<>uid://d3v00undb3wew::::res://scenes/slime.tscn
+c1m1.tscn::PackedScene::191525840560583360::1720382715::0::1::::<><>::res://scripts/LevelOne.cs<>uid://cslnrj62ebetl::::res://assets/asphalt.png<>uid://b6kdapi6g0x3y::::res://assets/country village tileset.png<>uid://dgrixjbvx3jwo::::res://assets/vending.png<>uid://d6bj4jg5ot3s::::res://assets/bg_night.png<>uid://4b5mmuu6q2jw::::res://scenes/keelzone.tscn<>uid://dqepawacbe1pw::::res://scenes/portal.tscn<>uid://cw34cy6ryfdmn::::res://scenes/single_platform.tscn
+::res://scripts/::1720382762
+BasicKey.cs::CSharpScript::-1::1720382068::0::1::::<>Area2D<>::
+Game.cs::CSharpScript::-1::1720382350::0::1::::<>Node2D<>::
+Keelzone.cs::CSharpScript::-1::1720301768::0::1::::<>Area2D<>::
+LevelOne.cs::CSharpScript::-1::1720382629::0::1::::<>Node2D<>::
 LevelTwo.cs::CSharpScript::-1::1720231547::0::1::::<>Node2D<>::
-Player.cs::CSharpScript::-1::1720231942::0::1::::<>CharacterBody2D<>::
-Portal.cs::CSharpScript::-1::1720235616::0::1::::<>Area2D<>::
-Slime.cs::CSharpScript::-1::1720298028::0::1::::<>Node2D<>::
+Player.cs::CSharpScript::-1::1720382106::0::1::::<>CharacterBody2D<>::
+Portal.cs::CSharpScript::-1::1720382762::0::1::::<>Area2D<>::
+Slime.cs::CSharpScript::-1::1720301839::0::1::::<>Node2D<>::
+UI.cs::CSharpScript::-1::1720381609::0::1::::<>CanvasLayer<>::

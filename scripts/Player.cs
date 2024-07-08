@@ -3,6 +3,12 @@ using System;
 
 public partial class Player : CharacterBody2D
 {
+    [Signal]
+    public delegate void CollectedEventHandler(string collectableName);
+
+    [Signal]
+    public delegate void PortalEnteredEventHandler(string nextMap);
+
     public const float Speed = 120.0f;
     public const float JumpVelocity = -300.0f;
 
@@ -50,7 +56,7 @@ public partial class Player : CharacterBody2D
         if (IsOnFloor())
         {
             if (_playerAnimSprite.Animation == "unalive_no_weapon") return;
-            
+
             _playerAnimSprite.Play(direction == Vector2.Zero ? "idle" : "run");
             _playerAnimSprite.Position = _playerAnimSprite.FlipH switch
             {
@@ -96,4 +102,19 @@ public partial class Player : CharacterBody2D
         Velocity = velocity;
         MoveAndSlide();
     }
+
+    public void Collect(string collectable)
+    {
+        GD.Print("Emitting");
+        
+        EmitSignal(SignalName.Collected, collectable);
+    }
+
+    public void ChangeLevel(string mapName)
+    {
+        GD.Print("Change Level");
+
+        EmitSignal(SignalName.PortalEntered, "c1m2.tscn");
+    }
+
 }

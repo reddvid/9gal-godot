@@ -3,6 +3,7 @@ using System;
 
 public partial class Portal : Area2D
 {
+    
     private Label _labelLevelComplete;
     private Node2D _player;
     private Timer _timer;
@@ -32,7 +33,6 @@ public partial class Portal : Area2D
 
     private void OnTimerTimeout()
     {
-        var levelName = GetTree().CurrentScene.Name;
-        GetTree().ChangeSceneToFile("res://scenes/level2.tscn");
+        GetTree().ChangeSceneToFile("res://scenes/world/c1m2.tscn");
     }
 }
